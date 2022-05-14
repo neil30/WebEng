@@ -524,8 +524,9 @@
     <div id="cursor"></div>
 
     <script>
-        var audio = new Audio("https://dl.dropboxusercontent.com/s/buaskh90mfmq1lm/CrossingField.mp3?dl=0");
+        var audio = new Audio("CrossingField.mp3");
         window.onload = function () {
+            audio.muted = true;
             audio.play();
         };
     </script>

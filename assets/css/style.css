@@ -18,6 +18,11 @@ body {
   overflow: hidden;
 }
 
+audio {
+  position: relative;
+  z-index: 10;
+}
+
 #cursor {
     height: 50px;
     width: 50px;

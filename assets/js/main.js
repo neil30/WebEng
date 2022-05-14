@@ -23,7 +23,7 @@ var audio = new Audio("CrossingField.mp3");
 // Open
 function openModal1() {
   modal1.style.display = 'block';
-  audio.play();
+  //audio.play();
 }
 
 function openModal2() {

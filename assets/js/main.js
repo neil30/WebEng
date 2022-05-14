@@ -18,9 +18,12 @@ confirmBtn[1].addEventListener("click", confirmModal2);
 confirmBtn[2].addEventListener("click", confirmModal3);
 window.addEventListener('click', outsideClick);
 
+var audio = new Audio("CrossingField.mp3");
+
 // Open
 function openModal1() {
   modal1.style.display = 'block';
+  audio.play();
 }
 
 function openModal2() {

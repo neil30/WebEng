@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: mainFont;
-  src: url(/assets/font/SAOUITT-Regular.ttf);
+  src: url(../font/SAOUITT-Regular.ttf);
 }
 
 body {

@@ -19,7 +19,8 @@ body {
 }
 
 audio {
-  position: relative;
+  position: absolute;
+  top: 2;
   z-index: 10;
 }
 

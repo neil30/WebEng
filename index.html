@@ -526,9 +526,6 @@
     <script>
         var audio = new Audio("CrossingField.mp3");
         audio.muted = true;
-        window.onload = function () {
-            audio.play();
-        };
         document.body.addEventListener("mousemove", function () {
             audio.play()
         })

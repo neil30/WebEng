@@ -1248,7 +1248,7 @@ div:hover ~ #cursor {
 .message-footer {
   background: #e0e0e0;
   width: 100%;
-  height: 410px;
+  height: 450px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -1275,26 +1275,45 @@ div:hover ~ #cursor {
   overflow: hidden;
 }
 
-.message-footer-description ul {
-  height: 300px;
+.message-footer-description #eto {
+  height: 340px;
   width: 100%;
   overflow-y: scroll;
-  padding: 0;
   padding-right: 17px;
   box-sizing: content-box;
+  display: block;
+}
+
+.message-footer-description ul {
   list-style: none;
+  padding: 0;
+}
+
+.message-footer-description #myMessage {
+  width: fit-content;
+  max-width: 230px;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  word-break: break-word;
+  background-color: #bdbdbd;
+  font-family: sans-serif;
+  float: left;
 }
 
 .message-footer-description li {
   width: fit-content;
-  max-width: 250px;
+  max-width: 230px;
+  min-width: 230px;
   padding: 10px;
   margin: 8px;
   border-radius: 10px;
-  font-size: 15px;
-  word-break: break-all;
-  background-color: #bdbdbd;
-
+  font-size: 14px;
+  word-break: break-word;
+  background-color: #ffd54f;
+  font-family: sans-serif;
+  float: right;
 }
 
 .message-footer-description .bottom {

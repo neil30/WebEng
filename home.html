@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <title>Project | WebEng</title>
+
+    <link rel="icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://kit.fontawesome.com/59b2f75b67.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="context">
+        <div class="container">
+            <div class="profile">
+                <div class="photo">
+                    <img src="assets/images/bg2.jpg" />
+                </div>
+                <div class="content">
+                    <div class="text">
+                        <div class="centerText">
+                            <h3>Neil James S. Tam-ao</h3>
+                            <h6>Computer Engineering</h6>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <span id="invent-btn"
+                        onclick="w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"><i
+                            class="fa-solid fa-box"></i></span>
+                    <span id="stats-btn"><i class="fa-solid fa-person-running"></i></span>
+                    <span id="prof-btn"><i class="fa-solid fa-address-card"></i></span>
+                    <span id="friend-btn"><i class="fa-solid fa-address-book"></i></span>
+                    <span id="message-btn"><i class="fa-solid fa-message"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="my-inventory" class="inventory modal">
+        <div class="inventory-layout">
+            <div class="inventory-content">
+                <div class="inventory-body box arrow-bottom">
+                    <div class="close-inv"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h2>Inventory</h2>
+                    <hr>
+                    <div class="scrollable">
+                        <ul>
+                            <li onclick="w3.show('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_weapon.png" alt="">Calculator 991ES Plus</li>
+                            <li onclick="w3.show('#item2');w3.hide('#item1');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_weapon.png" alt="">Desktop</li>
+                            <li onclick="w3.show('#item3');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_weapon.png" alt="">USB Flashdrive</li>
+                            <li onclick="w3.show('#item4');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_weapon.png" alt="">Keyboard and Mouse</li>
+                            <li onclick="w3.show('#item5');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_weapon.png" alt="">Laptop</li>
+                            <li onclick="w3.show('#item6');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_weapon.png" alt="">Smartphone</li>
+                            <li onclick="w3.show('#item7');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_item.png" alt="">UniPin 0.5</li>
+                            <li onclick="w3.show('#item8');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_item.png" alt="">UniPin 0.4</li>
+                            <li onclick="w3.show('#item9');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_item.png" alt="">UniPin 0.3</li>
+                            <li onclick="w3.show('#item10');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_item.png" alt="">UniPin 0.2</li>
+                            <li onclick="w3.show('#item11');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_item.png" alt="">UniPin 0.1</li>
+                            <li onclick="w3.show('#item12');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_potion.png" alt="">Katinko</li>
+                            <li onclick="w3.show('#item13');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_potion.png" alt="">Vicks Vaporub</li>
+                            <li onclick="w3.show('#item14');w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_potion.png" alt="">White Flower</li>
+                            <li onclick="w3.show('#item15');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_food.png" alt="">Chicken Fillet ala King</li>
+                            <li onclick="w3.show('#item16');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_food.png" alt="">Saucer</li>
+                            <li onclick="w3.show('#item17');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_food.png" alt="">Siomai Rice</li>
+                            <li onclick="w3.show('#item18');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item19');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_drinks.png" alt="">Blue Lemonade</li>
+                            <li onclick="w3.show('#item19');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item20');"
+                                tabindex=1><img src="assets/images/ic_drinks.png" alt="">Coffee</li>
+                            <li onclick="w3.show('#item20');w3.hide('#item1');w3.hide('#item2');w3.hide('#item4');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');"
+                                tabindex=1><img src="assets/images/ic_drinks.png" alt="">Water</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inventory-footer">
+                    <div class="inventory-footer-center">
+                        <div class="inventory-footer-logo">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <div class="inventory-footer-description">
+                            <p id="item1">A great support weapon that helps for calculation to easily solve problems and
+                                equations.</p>
+                            <p id="item2">A powerful machine that is powered with electricity and makes the impossible
+                                possible.</p>
+                            <p id="item3">A basic weapon used to transfer files from different devices to another. Be
+                                Careful as it is always missing.</p>
+                            <p id="item4">A support peripheral for desktop and laptop computers, it helps to unleash the
+                                real power of those devices.</p>
+                            <p id="item5">A portable version of desktop that is equipped with a battery to bring it
+                                anywhere.</p>
+                            <p id="item6">A weapon that every adventurer should have.</p>
+                            <p id="item7">A very expensive and rare weapon that could be found in national bookstores or
+                                pandayan. Useful for drafting and designing.</p>
+                            <p id="item8">A very expensive and rare weapon that could be found in national bookstores or
+                                pandayan. Useful for drafting and designing.</p>
+                            <p id="item9">A very expensive and rare weapon that could be found in national bookstores or
+                                pandayan. Useful for drafting and designing.</p>
+                            <p id="item10">A very expensive and rare weapon that could be found in national bookstores
+                                or pandayan. Useful for drafting and designing.</p>
+                            <p id="item11">A very expensive and rare weapon that could be found in national bookstores
+                                or pandayan. Useful for drafting and designing.</p>
+                            <p id="item12">A powerful potion that heals muscle damages dealt by shrimp posture while
+                                coding. Best for back pain.</p>
+                            <p id="item13">A powerful potion that helps to lessen the symptoms of curse damage caused by
+                                colds and flu.</p>
+                            <p id="item14">A strong scented potion that helps to relax your mind caused by confusion
+                                dealt by continuous fighting with bugs and errors.</p>
+                            <p id="item15">A delicious food that you can buy in McDonald's. It recovers 70% of your HP.
+                            </p>
+                            <p id="item16">A unique food that you can only buy in the stores along the Federizo Hall. It
+                                recovers 30% of your HP.</p>
+                            <p id="item17">A delicate food, a work of art, and the best. It recovers 100% of your HP.
+                            </p>
+                            <p id="item18">A drink that recovers 50% of your MP.</p>
+                            <p id="item19">A drink that helps you stay overnight and recovers 100% of your MP. Don't
+                                consume too much or else it makes you acidic.</p>
+                            <p id="item20">A drink to keep you hydrated. Always consume at least 8 or more glasses of
+                                water a day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-stats" class="stats modal">
+        <div class="stats-layout">
+            <div class="stats-content">
+                <div class="stats-body box arrow-bottom">
+                    <div class="close-stats"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h2>Skills and Abilities</h2>
+                </div>
+                <div class="stats-footer">
+                    <div class="stats-footer-center">
+                        <div class="stats-footer-description">
+                            <ul>
+                                <h4>Object-oriented</h4>
+                                <hr>
+                                <li>
+                                    <h5>C#</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:40%">
+                                            <p class="percent">40%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Java</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:60%">
+                                            <p class="percent">60%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Php</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:70%">
+                                            <p class="percent">70%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Python</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:60%">
+                                            <p class="percent">60%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Visual Basic</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:60%">
+                                            <p class="percent">60%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <h4>Web Development</h4>
+                                <hr>
+                                <li>
+                                    <h5>Bootstrap</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:90%">
+                                            <p class="percent">90%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>HTML5</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:95%">
+                                            <p class="percent">95%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>CSS3</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:95%">
+                                            <p class="percent">95%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>JavaScript</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:85%">
+                                            <p class="percent">85%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>jQuery</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:70%">
+                                            <p class="percent">70%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>AJAX</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:65%">
+                                            <p class="percent">65%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>JSON</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:90%">
+                                            <p class="percent">90%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <h4>Database</h4>
+                                <hr>
+                                <li>
+                                    <h5>Firebase</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:95%">
+                                            <p class="percent">95%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>MySQL</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:80%">
+                                            <p class="percent">80%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>SQLite3</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:50%">
+                                            <p class="percent">50%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <h4>Arduino</h4>
+                                <hr>
+                                <li>
+                                    <h5>C</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:70%">
+                                            <p class="percent">70%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>C++</h5>
+                                    <div class="progress">
+                                        <div class="bar" style="width:80%">
+                                            <p class="percent">80%</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-prof" class="prof modal">
+        <div class="prof-layout">
+            <div class="prof-content">
+                <div class="prof-body box arrow-bottom">
+                    <div class="close-prof"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h2>Profile</h2>
+                </div>
+                <div class="prof-footer">
+                    <div class="prof-footer-center">
+                        <div class="prof-footer-description">
+                            <div class="prof-footer-body">
+                                <h4>IGN: Neil James</h4>
+                                <hr>
+                                <img src="assets/images/body.png" alt="">
+                            </div>
+                            <div class="prof-footer-info">
+                                <div class="itemInfo">
+                                    <h4>Neil James S. Tam-ao</h4>
+                                    <hr>
+                                    <h6>Full Name</h6>
+                                </div>
+
+                                <div class="itemInfo">
+                                    <h4>Bachelor of Science in Computer Engineering</h4>
+                                    <hr>
+                                    <h6>Course</h6>
+                                </div>
+
+                                <div class="itemInfo">
+                                    <h4>neiljames.tamao.s@bulsu.edu.ph</h4>
+                                    <hr>
+                                    <h6>E-mail</h6>
+                                </div>
+
+                                <div class="itemInfo">
+                                    <h4>September 30, 1999</h4>
+                                    <hr>
+                                    <h6>Birthday</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-friend" class="friend modal">
+        <div class="friend-layout">
+            <div class="friend-content">
+                <div class="friend-body box arrow-bottom">
+                    <div class="close-friend"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h2>Social Media</h2>
+                </div>
+                <div class="friend-footer">
+                    <div class="friend-footer-center">
+                        <div class="friend-footer-description">
+                            <div class="box">
+                                <span id="modal-btn"><i class="fa-brands fa-facebook-f"></i></span>
+                            </div>
+                            <div class="box">
+                                <span id="modal-btn"><i class="fa-brands fa-instagram"></i></span>
+                            </div>
+                            <div class="box">
+                                <span id="modal-btn"><i class="fa-brands fa-linkedin-in"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-modal1" class="dialog modal">
+        <div class="modal-layout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-center">
+                        <h1>Alert</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>Are you sure you want to continue?</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer-center">
+                        <div class="modal-footer-button">
+                            <img src="assets/images/confirm.png" class="confirm" alt="">
+                            <img src="assets/images/cancel.png" class="close" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-modal2" class="dialog modal">
+        <div class="modal-layout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-center">
+                        <h1>Alert</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>Are you sure you want to continue?</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer-center">
+                        <div class="modal-footer-button">
+                            <img src="assets/images/confirm.png" class="confirm" alt="">
+                            <img src="assets/images/cancel.png" class="close" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-modal3" class="dialog modal">
+        <div class="modal-layout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-center">
+                        <h1>Alert</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>Are you sure you want to continue?</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer-center">
+                        <div class="modal-footer-button">
+                            <img src="assets/images/confirm.png" class="confirm" alt="">
+                            <img src="assets/images/cancel.png" class="close" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-message" class="message modal">
+        <div class="message-layout">
+            <div class="message-content">
+                <div class="message-body box arrow-bottom">
+                    <div class="close-message"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <h2>Messages</h2>
+                </div>
+                <div class="message-footer">
+                    <div class="message-footer-center">
+                        <div class="message-footer-description">
+                            <div id="eto">
+                                <ul>
+                                    <li id="myMessage">Hello sir Lech! Thank you for reaching up to this point. I just wanted to thank
+                                        you for being a good role model. Always
+                                        inspiring us in hopeless times, giving advice whenever we need it, and always
+                                        giving your best in teaching your
+                                        students.</li>
+                                </ul>
+                                <ul id="list">
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <div class="input-layout">
+                                    <input id="msg-content" class="input" type="text"
+                                        placeholder="Enter your message to me.">
+                                    <i id="send-btn" class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-modal4" class="dialog modal">
+        <div class="modal-layout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-center">
+                        <h1>Alert</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>Are you sure you want to send this message?</h2>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer-center">
+                        <div class="modal-footer-button">
+                            <img src="assets/images/confirm.png" id="confirm-btn" alt="">
+                            <img src="assets/images/cancel.png" id="cancel-btn" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script>
+        var audio = new Audio("CrossingField.mp3");
+        audio.muted = true;
+        document.body.addEventListener("mousemove", function () {
+            audio.play()
+        })
+    </script>
+
+    <script>
+        // Background Animation
+        var cursor = document.getElementById("cursor");
+        document.onmousemove = function (e) {
+            cursor.style.left = (e.pageX - 25) + "px";
+            cursor.style.top = (e.pageY - 25) + "px";
+            cursor.style.display = "block";
+        }
+    </script>
+
+    <script>
+            // Buttons
+            (function () {
+                $(".btn").click(function () {
+                    $(this).toggleClass("active");
+                    return $(".box").toggleClass("open");
+                });
+            }.call(this));
+    </script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inventory.js"></script>
+    <script src="assets/js/stats.js"></script>
+    <script src="assets/js/prof.js"></script>
+    <script src="assets/js/friend.js"></script>
+    <script src="assets/js/message.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCMm55IA_9O16Ep5YW1Kge7u39nJpiDCao",
+            authDomain: "study-8c357.firebaseapp.com",
+            databaseURL: "https://study-8c357-default-rtdb.firebaseio.com",
+            projectId: "study-8c357",
+            storageBucket: "study-8c357.appspot.com",
+            messagingSenderId: "837706396021",
+            appId: "1:837706396021:web:36ef421b3ae44ca822e33c"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import { getDatabase, ref, set, child, get, update, onValue } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
+        const db = getDatabase();
+
+        const msgContent = document.getElementById('msg-content');
+        const submit = document.getElementById('send-btn');
+        const confirm = document.getElementById('confirm-btn');
+        const cancel = document.getElementById('cancel-btn');
+
+        function sendMessage() {
+            const dbRef = ref(db);
+            let curUser = sessionStorage.getItem("name");
+
+            get(child(dbRef, "Count")).then((snapshot) => {
+                var curNumber = snapshot.val().number;
+                var count = parseInt(curNumber) + 1;
+                set(ref(db, "Messages/" + count), {
+                    message: msgContent.value,
+                    name: curUser
+                })
+                    .then(() => {
+                        msgContent.value = "";
+                        update(ref(db, "Count"), {
+                            number: count,
+                        });
+                    })
+                    .catch((error) => {
+                        alert("Error" + error);
+                    });
+            });
+        }
+
+        var stdNo;
+        function addItems(messages) {
+            var ul = document.getElementById('list');
+            var _message = document.createElement('li');
+            _message.innerHTML = messages;
+            ul.appendChild(_message);
+        }
+
+        function addItemsToList(msgs) {
+            stdNo = 0;
+            msgs.forEach(element => {
+                addItems(element.message);
+            })
+        }
+
+        function fetchAllData() {
+            const dbRef = ref(db);
+
+            get(child(dbRef, "Messages")).then((snapshot) => {
+                var msgs = [];
+
+                snapshot.forEach(childSnapshot => {
+                    msgs.push(childSnapshot.val());
+                })
+
+                addItemsToList(msgs);
+            })
+        }
+
+        function refreshData() {
+            var ul = document.getElementById('list');
+            ul.innerHTML = '';
+            setTimeout(() => {
+                fetchAllData();
+            }, 500);
+        }
+
+        submit.addEventListener("click", function (event) {
+            event.preventDefault();
+            const modal4 = document.querySelector('#my-modal4');
+            modal4.style.display = 'block';
+        });
+
+        confirm.addEventListener("click", function (event) {
+            event.preventDefault();
+            sendMessage();
+            refreshData();
+            const modal4 = document.querySelector('#my-modal4');
+            modal4.style.display = 'none';
+        });
+
+        cancel.addEventListener("click", function (event) {
+            event.preventDefault();
+            const modal4 = document.querySelector('#my-modal4');
+            modal4.style.display = 'none';
+        });
+
+        window.onload(fetchAllData());
+    </script>
+</body>
+
+</html>

@@ -20,11 +20,11 @@
 <body>
     <div class="context">
         <div class="container">
-            <div class="profile">
-                <div class="photo">
+            <div class="profile" id="profile">
+                <div class="photo" id="photo" onclick="tabs()">
                     <img src="assets/images/bg2.jpg" />
                 </div>
-                <div class="content">
+                <div class="content" id="content">
                     <div class="text">
                         <div class="centerText">
                             <h3>Neil James S. Tam-ao</h3>
@@ -35,7 +35,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" id="box">
                     <span id="invent-btn"
                         onclick="w3.hide('#item1');w3.hide('#item2');w3.hide('#item3');w3.hide('#item4');w3.hide('#item5');w3.hide('#item6');w3.hide('#item7');w3.hide('#item8');w3.hide('#item9');w3.hide('#item10');w3.hide('#item11');w3.hide('#item12');w3.hide('#item13');w3.hide('#item14');w3.hide('#item15');w3.hide('#item16');w3.hide('#item17');w3.hide('#item18');w3.hide('#item19');w3.hide('#item20');"><i
                             class="fa-solid fa-box"></i></span>
@@ -45,8 +45,63 @@
                     <span id="message-btn"><i class="fa-solid fa-message"></i></span>
                 </div>
             </div>
+            <section id="tabs">
+                <div class="mainCon">
+                    <div class="tabCont" id="tabCont">
+                        <div class="tab-wrap">
+                            <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                            <label for="tab1"><i class="far fa-image"></i> Projects</label>
+
+                            <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                            <label for="tab2"><i class="far fa-play-circle"></i> Watch</label>
+
+                            <div class="tab__content">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/images/project1.jpg" class="d-block w-100" alt="assets/images/project1.jpg">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/images/project2.jpg" class="d-block w-100" alt="assets/images/project2.jpg">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/images/project3.jpg" class="d-block w-100" alt="assets/images/project3.jpg">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="tab__content">
+                                <video controls autoplay>
+                                    <source src="SAOvid.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+
     <div class="area">
         <ul class="circles">
             <li></li>
@@ -482,7 +537,8 @@
                         <div class="message-footer-description">
                             <div id="eto">
                                 <ul>
-                                    <li id="myMessage">Hello sir Lech! Thank you for reaching up to this point. I just wanted to thank
+                                    <li id="myMessage">Hello sir Lech! Thank you for reaching up to this point. I just
+                                        wanted to thank
                                         you for being a good role model. Always
                                         inspiring us in hopeless times, giving advice whenever we need it, and always
                                         giving your best in teaching your
@@ -564,6 +620,7 @@
     <script src="assets/js/prof.js"></script>
     <script src="assets/js/friend.js"></script>
     <script src="assets/js/message.js"></script>
+    <script src="assets/js/tab.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -675,7 +732,7 @@
             modal4.style.display = 'none';
         });
 
-        window.onload(fetchAllData());
+        window.addEventListener('load', fetchAllData, false);
     </script>
 </body>
 

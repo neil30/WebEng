@@ -191,7 +191,8 @@ div:hover ~ #cursor {
   border: 5px solid #fafafa;
   margin-left: -50px;
   box-shadow: 0 0 0.5rem #babbbc;
-  animation: rotate-photo 0.5s forwards ease-in-out;
+  -webkit-animation: pulse 2s infinite 2s cubic-bezier(0.25, 0, 0, 1);
+  animation: rotate-photo 0.5s forwards ease-in-out, pulse 2s infinite 2s cubic-bezier(0.25, 0, 0, 1);
   cursor: pointer;
   position: relative;
   z-index: 99;
@@ -199,7 +200,7 @@ div:hover ~ #cursor {
 }
 
 .profile .photo:hover {
-  box-shadow: 0 0 0 7px rgba(170, 187, 204, 0.5);
+  margin-top: -10px;
 }
 
 @keyframes rotate-photo {
@@ -209,6 +210,18 @@ div:hover ~ #cursor {
 
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
   }
 }
 

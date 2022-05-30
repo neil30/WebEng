@@ -1,8 +1,4 @@
 var checker = 1;
-window.addEventListener("load", function () {
-	var tabss = document.getElementById("tabCont");
-	tabss.classList.add("none");
-});
 
 function tabs() {
 	try {

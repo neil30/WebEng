@@ -163,6 +163,51 @@ div:hover ~ #cursor {
   overflow: hidden;
 }
 
+.bubble {
+  width: 70%;
+  height: 100px;
+  margin: auto;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  position: absolute;
+  top: 20%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  animation: blink 1.5s infinite;
+  transition: all 2s;
+}
+
+.text-content {
+  display: flex;
+  width: fit-content;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.bubble #name {
+  padding-left: 4px;
+}
+
+@keyframes blink {
+  0% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.555);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
 .profile {
   width: 330px;
   height: 100px;
@@ -192,7 +237,8 @@ div:hover ~ #cursor {
   margin-left: -50px;
   box-shadow: 0 0 0.5rem #babbbc;
   -webkit-animation: pulse 2s infinite 2s cubic-bezier(0.25, 0, 0, 1);
-  animation: rotate-photo 0.5s forwards ease-in-out, pulse 2s infinite 2s cubic-bezier(0.25, 0, 0, 1);
+  animation: rotate-photo 0.5s forwards ease-in-out,
+    pulse 2s infinite 2s cubic-bezier(0.25, 0, 0, 1);
   cursor: pointer;
   position: relative;
   z-index: 99;
@@ -1500,9 +1546,9 @@ div:hover ~ #cursor {
   text-align: center;
   background-color: #e0e0e09d;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-align: center;
   transition: 0.3s background-color ease, 0.3s box-shadow ease;
   height: 50px;

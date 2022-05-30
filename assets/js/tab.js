@@ -1,4 +1,15 @@
 var checker = 1;
+window.addEventListener("load", function () {
+	var bub = document.getElementById("bubble");
+	var uname = document.getElementById("name");
+	var cname = sessionStorage.getItem("name");
+	
+	bub.style.left = "50%";
+	uname.innerHTML = cname;
+	setTimeout(() => {
+		bub.style.left = "150%";
+	}, 10000);
+});
 
 function tabs() {
 	try {

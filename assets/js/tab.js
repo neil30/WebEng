@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 	uname.innerHTML = cname;
 	setTimeout(() => {
 		bub.style.left = "150%";
-	}, 10000);
+	}, 8000);
 });
 
 function tabs() {
